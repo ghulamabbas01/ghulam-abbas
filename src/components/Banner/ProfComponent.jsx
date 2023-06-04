@@ -2,23 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import { FiFacebook, FiTwitter } from "react-icons/fi";
-import { Helmet } from "react-helmet";
 const ProfComponent = () => {
   return (
     <>
-      <Helmet>
-        <title>
-          Mobile-first Development | UI/UX Developer | Responsive Website
-          Creater
-        </title>
-        <meta
-          name="description"
-          content=" I Create Visually Appealing And User-friendly Websites, Focusing On Responsive Design And Seamless User Experiences. With a Passion For Clean Code And Attention To Detail, I Bring Creativity And Technical Skills To Every Project. Let's Build Something Amazing Together."
-        />
-      </Helmet>
       <Container id="home">
         <Slide direction="left">
           <Texts>
@@ -73,6 +62,14 @@ const ProfComponent = () => {
                     target="_blank"
                   >
                     <FaLinkedinIn />
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.fiverr.com/ghulamabbas10?up_rollout=true"
+                    target="_blank"
+                  >
+                    <FaFacebookF />
                   </a>
                 </span>
               </div>

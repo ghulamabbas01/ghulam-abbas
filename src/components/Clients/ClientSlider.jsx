@@ -2,20 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { IoIosQuote } from "react-icons/io";
 import { AiFillStar } from "react-icons/ai";
-import { Helmet } from "react-helmet";
 
 const ClientSlider = (props) => {
   const { name, position, img_url, stars, disc } = props.item;
   return (
     <>
-      <Helmet>
-        <title>TESTIMONIALS | UI/UX Developer | What Clients Say ?</title>
-        <meta
-          name="description"
-          content=" Working with Muneer Khair was an absolute pleasure. Their expertise in front-end web development truly elevated our website. They effortlessly transformed our designs into a fully functional and visually stunning website. Their attention to detail, responsiveness, and commitment to delivering high-quality work make them an invaluable asset to any project"
-        />
-      </Helmet>
-
       <Container>
         <Header>
           <span className="quote">

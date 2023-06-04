@@ -16,7 +16,6 @@ import emailjs from "emailjs-com";
 // import Vue from "vue";
 // import Router from "vue-router";
 import axios from "axios";
-import { Helmet } from "react-helmet";
 
 const Footer = () => {
   const scrollUp = () => {
@@ -102,14 +101,6 @@ const Footer = () => {
   };
   return (
     <>
-      <Helmet>
-        <title>About Us | Ghulam Abbas</title>
-        <meta
-          name="description"
-          content=" We would love to hear from you! If you have any questions, inquiries, or project opportunities, please don't hesitate to get in touch. Feel free to reach out through the contact form below or via email. We are excited to collaborate and bring your web development ideas to life."
-        />
-      </Helmet>
-
       <Container id="footer">
         <Profile>
           <Slide direction="left" delay={1}>
@@ -196,6 +187,16 @@ const Footer = () => {
                 <span>
                   <a href="https://twitter.com/GhulamA58975965" target="_blank">
                     <FiTwitter />
+                  </a>
+                </span>
+              </Zoom>
+              <Zoom>
+                <span>
+                  <a
+                    href="https://www.fiverr.com/ghulamabbas10?up_rollout=true"
+                    target="_blank"
+                  >
+                    <FiFacebook />
                   </a>
                 </span>
               </Zoom>
