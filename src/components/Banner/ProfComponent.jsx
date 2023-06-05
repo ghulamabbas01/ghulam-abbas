@@ -78,10 +78,7 @@ const ProfComponent = () => {
         </Slide>
         <Slide direction="right">
           <Profile>
-            <img
-              src="https://i.ibb.co/sFTVpFs/Picsart-23-05-15-14-24-28-836-removebg-preview.png"
-              alt="profile"
-            />
+            <img src="/images/logo.png" alt="profile" />
           </Profile>
         </Slide>
       </Container>

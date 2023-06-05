@@ -24,81 +24,7 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
-  // new Vue({
-  //   el: "#app",
-  //   data() {
-  //     return {
-  //       name: "",
-  //       email: "",
-  //       caps: "",
-  //     };
-  //   },
-  //   methods: {
-  //     submitForm() {
-  //       axios.post("//jsonplaceholder.typicode.com/posts", {
-  //         name: this.name,
-  //         email: this.email,
-  //         caps: this.caps,
-  //       });
-  //     },
-  //   },
-  // });
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
-  const [disabled, setDisabled] = useState(false);
-
-  // Function that displays a success toast on bottom right of the page when form submission is successful
-  const toastifySuccess = () => {
-    toast("Form sent!", {
-      position: "bottom-right",
-      autoClose: 5000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: false,
-      className: "submit-feedback success",
-      toastId: "notifyToast",
-    });
-  };
-
-  // Function called on submit that uses emailjs to send email of valid contact form
-  const onSubmit = async (data) => {
-    // Destrcture data object
-    const { name, email, message } = data;
-    try {
-      // Disable form while processing submission
-      setDisabled(true);
-
-      // Define template params
-      const templateParams = {
-        name,
-        email,
-        message,
-      };
-
-      // Use emailjs to email contact form data
-      await emailjs.send(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
-        templateParams,
-        process.env.EMAILJS_USER_ID
-      );
-
-      // Reset contact form fields after submission
-      reset();
-      // Display success toast
-      toastifySuccess();
-      // Re-enable form submission
-      setDisabled(false);
-    } catch (e) {
-      console.log(e);
-    }
-  };
   return (
     <>
       <Container id="footer">
@@ -210,11 +136,7 @@ const Footer = () => {
         </Profile>
         <Form>
           <Slide direction="right">
-            <form
-              id="contact-form"
-              onSubmit={handleSubmit(onSubmit)}
-              noValidate
-            >
+            <form id="contact-form">
               <div className="name">
                 <span>
                   <CgProfile />
@@ -225,16 +147,6 @@ const Footer = () => {
                   id="name"
                   v-model="name"
                   required
-                  {...register("name", {
-                    required: {
-                      value: true,
-                      message: "Please enter your name",
-                    },
-                    maxLength: {
-                      value: 30,
-                      message: "Please use 30 characters or less",
-                    },
-                  })}
                 />
               </div>
               <div className="email">
@@ -247,11 +159,6 @@ const Footer = () => {
                   placeholder="Email..."
                   v-model="email"
                   required
-                  {...register("email", {
-                    required: true,
-                    pattern:
-                      /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                  })}
                 />
               </div>
               <div className="message">
@@ -265,9 +172,6 @@ const Footer = () => {
                   id="caps"
                   v-model="caps"
                   required
-                  {...register("message", {
-                    required: true,
-                  })}
                 ></textarea>
               </div>
               <button type="submit">Submit</button>
