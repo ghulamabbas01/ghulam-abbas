@@ -6,22 +6,22 @@ import styled from "styled-components";
 
 let data = [
   {
-    img: "https://i.ibb.co/SN9KR1x/https-app-commercehope-com-1.png",
+    img: "/images/project-4.png",
     disc: "i Create a Front End This App",
     link: "https://app.commercehope.com",
   },
   {
-    img: "https://i.ibb.co/C9sYkT8/https-www-mkmobiledetailing-net.png",
+    img: "/images/project-1.png",
     disc: "I Create A Mk Mobile Detailing Servise Website ",
     link: "https://www.mkmobiledetailing.net/",
   },
   {
-    img: "https://i.ibb.co/QmBSkJV/COMMERCEHOPE-Open-Source-Reactjs-Ecommerce-script-1.png",
+    img: "/images/project-3.png",
     disc: "i create a website for marketing for my ecommerce Script the name of COMMERCEHOPE",
     link: "https://www.commercehope.com",
   },
   {
-    img: "https://i.ibb.co/4RPrcYT/precisemerchandise-com.png",
+    img: "/images/project-2.png",
     disc: "I have developed an e-commerce website for my Dubai client",
     link: "https://precisemerchandise.com",
   },
