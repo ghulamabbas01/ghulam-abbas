@@ -6,22 +6,22 @@ import styled from "styled-components";
 
 let data = [
   {
-    img: "/images/project-4.png",
+    img: "/project-4.png",
     disc: "i Create a Front End This App",
     link: "https://app.commercehope.com",
   },
   {
-    img: "/images/project-1.png",
+    img: "/project-1.png",
     disc: "I Create A Mk Mobile Detailing Servise Website ",
     link: "https://www.mkmobiledetailing.net/",
   },
   {
-    img: "/images/project-3.png",
+    img: "/project-3.png",
     disc: "i create a website for marketing for my ecommerce Script the name of COMMERCEHOPE",
     link: "https://www.commercehope.com",
   },
   {
-    img: "/images/project-2.png",
+    img: "/project-2.png",
     disc: "I have developed an e-commerce website for my Dubai client",
     link: "https://precisemerchandise.com",
   },
