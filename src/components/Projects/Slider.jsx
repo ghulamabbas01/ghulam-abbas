@@ -6,15 +6,21 @@ import styled from "styled-components";
 
 let data = [
   {
-    img: "/project-4.png",
-    disc: "i Create a Front End This App",
-    link: "https://app.commercehope.com",
-  },
-  {
     img: "/project-1.png",
     disc: "I Create A Mk Mobile Detailing Servise Website ",
     link: "https://www.mkmobiledetailing.net/",
   },
+  {
+    img: "/islamic-center.jpg",
+    disc: "Check Out Our New Project For Usa Mosque parsiyan association centre  ",
+    link: "https://www.parsiyan-association.com",
+  },
+  {
+    img: "/project-4.png",
+    disc: "i Create a Front End This App",
+    link: "https://app.commercehope.com",
+  },
+
   {
     img: "/project-3.png",
     disc: "i create a website for marketing for my ecommerce Script the name of COMMERCEHOPE",
@@ -23,11 +29,6 @@ let data = [
   {
     img: "/project-2.png",
     disc: "I have developed an e-commerce website for my Dubai client",
-    link: "https://precisemerchandise.com",
-  },
-  {
-    img: "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
   },
 ];
 

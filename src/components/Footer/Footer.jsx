@@ -9,13 +9,6 @@ import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FiFacebook, FiTwitter } from "react-icons/fi";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { toast } from "react-toastify";
-import emailjs from "emailjs-com";
-// import Vue from "vue";
-// import Router from "vue-router";
-import axios from "axios";
 
 const Footer = () => {
   const scrollUp = () => {
@@ -134,7 +127,7 @@ const Footer = () => {
             </ArrowUp>
           </Fade>
         </Profile>
-        <Form>
+        <Form action="https://formspree.io/f/mzblpqng" method="POST">
           <Slide direction="right">
             <form id="contact-form">
               <div className="name">
@@ -142,10 +135,10 @@ const Footer = () => {
                   <CgProfile />
                 </span>
                 <input
-                  type="text"
                   placeholder="Fullname..."
                   id="name"
-                  v-model="name"
+                  type="name"
+                  name="name"
                   required
                 />
               </div>
@@ -156,8 +149,8 @@ const Footer = () => {
                 <input
                   id="email"
                   type="email"
+                  name="email"
                   placeholder="Email..."
-                  v-model="email"
                   required
                 />
               </div>
@@ -166,11 +159,11 @@ const Footer = () => {
                   <FiMail />
                 </span>
                 <textarea
+                  id="message"
+                  name="message"
                   cols="30"
                   rows="10"
                   placeholder="Message..."
-                  id="caps"
-                  v-model="caps"
                   required
                 ></textarea>
               </div>

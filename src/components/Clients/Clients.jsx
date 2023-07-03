@@ -12,16 +12,14 @@ let clients = [
     img_url:
       "https://i.ibb.co/fpCRSBn/Whats-App-Image-2023-04-21-at-16-35-11.jpg",
     stars: 5,
-    disc: `Ghulam Abbas is very humbal and nice person i am very satisfied from ghulam Abbas I will also request you to prepare a website for them`,
+    disc: `I am thrilled with the outstanding service I received from Ghulam Abbas. From start to finish, the team demonstrated exceptional professionalism and expertise. They were attentive to my needs, provided regular updates, and delivered the final product ahead of schedule. The quality exceeded my expectations, and I highly recommend their services to anyone in need.`,
   },
   {
-    name: "John Michel",
+    name: "Shamsuddin Malik ",
     position: "web developer",
-    img_url:
-      "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-    stars: 4,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+    img_url: "/clint.jpg",
+    stars: 5,
+    disc: `Highly satisfied with the services provided by [Ghulam Abbas]. Professionalism, expertise, and attention to detail were top-notch. Exceeded expectations, delivering a high-quality product within agreed timeframe. Clear, prompt communication and valuable insights. Exceptional craftsmanship and attention to detail. Highly recommend!"`,
   },
   {
     name: "John Michel",
